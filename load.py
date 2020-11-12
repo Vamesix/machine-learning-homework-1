@@ -8,7 +8,6 @@ import tensorflow as tf
 from tensorflow.keras.layers import AveragePooling2D, Dropout, Flatten, Dense
 
 
-
 def create_model(num_classes, dropout_rate):
     base = tf.keras.applications.InceptionV3(include_top=False, weights=None, input_shape=(256, 256, 3))
     x = base.get_layer("mixed10").output
