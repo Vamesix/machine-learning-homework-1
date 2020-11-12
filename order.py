@@ -2,7 +2,6 @@ import os
 import csv
 import shutil
 
-
 labels = []
 with open("data/training_labels.csv") as file:
     csv_file = csv.reader(file)
